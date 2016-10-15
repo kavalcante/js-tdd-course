@@ -1,0 +1,25 @@
+{
+  "name": "js-tdd-course",
+  "version": "1.0.0",
+  "description": "Repositório para estudos de TDD com JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kavalcante/js-tdd-course.git"
+  },
+  "keywords": [
+    "tdd",
+    "course",
+    "test",
+    "library"
+  ],
+  "author": "João Vitor Cavalcante <contato@kavalcante.com> (http://kavalcante.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kavalcante/js-tdd-course/issues"
+  },
+  "homepage": "https://github.com/kavalcante/js-tdd-course#readme"
+}
