@@ -4,8 +4,8 @@
   "description": "Repositório para estudos de TDD com JS",
   "main": "index.js",
   "scripts": {
-    "lint": "echo ./node_modules/.bin/eslint src/*.js",
-    "test": "./node_modules/.bin/mocha tests/**/*.spec.js",
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
     "test:tdd": "npm run test -- --watch"
   },
   "repository": {
@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/kavalcante/js-tdd-course#readme",
   "devDependencies": {
+    "babel-preset-env": "^1.6.0",
     "chai": "^4.0.2",
     "eslint": "^3.8.0",
     "eslint-config-airbnb": "^12.0.0",
@@ -32,5 +33,8 @@
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.4.1",
     "mocha": "^3.4.2"
+  },
+  "dependencies": {
+    "babel-register": "^6.24.1"
   }
 }
