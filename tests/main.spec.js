@@ -1,77 +1,34 @@
 import { expect } from 'chai';
-import { sum, sub, mult, div } from '../src/main';
+import FizzBuzz from '../src/main';
 
-describe('Calc', () => {
+describe('FizzBuzz', () => {
 
   // Smoke Test
   describe('Smoke Tests', () => {
 
-    it('should exist the method "sum"', () => {
-      expect(sum).to.exist;
-      expect(sum).to.be.a('function');
-    });
-
-    it('should exist the method "sub"', () => {
-      expect(sub).to.exist;
-      expect(sub).to.be.a('function');
-    });
-
-    it('should exist the method "mult"', () => {
-      expect(mult).to.exist;
-      expect(mult).to.be.a('function');
-    });
-
-    it('should exist the method "div"', () => {
-      expect(div).to.exist;
-      expect(div).to.be.a('function');
+    it('should exist the "FizzBuzz" module', () => {
+      expect(FizzBuzz).to.exist;
+      expect(FizzBuzz).to.be.a('function');
     });
 
   });
 
-  describe('Sum', () => {
+  describe('FizzBuzz', () => {
 
-    it('should return 4 when "sum(2, 2)"', () => {
-      expect(sum(2, 2)).to.be.equal(4);
+    it('should return "Fizz" when "FizzBuzz(3)"', () => {
+      expect(FizzBuzz(3)).to.be.equal('Fizz');
     });
 
-    it('should return -4 when "sum(-8, 4)"', () => {
-      expect(sum(-8, 4)).to.be.equal(-4);
+    it('should return "Buzz" when "FizzBuzz(5)"', () => {
+      expect(FizzBuzz(5)).to.be.equal('Buzz');
     });
 
-  });
-
-  describe('Sub', () => {
-
-    it('should return 4 when "sub(8, 4)"', () => {
-      expect(sub(8, 4)).to.be.equal(4);
+    it('should return "FizzBuzz" when "FizzBuzz(15)"', () => {
+      expect(FizzBuzz(15)).to.be.equal('FizzBuzz');
     });
 
-    it('should return -4 when "sub(6, 10)"', () => {
-      expect(sub(6, 10)).to.be.equal(-4);
-    })
-
-  });
-
-  describe('Mult', () => {
-
-    it('should return 16 when "mult(4, 4)"', () => {
-      expect(mult(4, 4)).to.be.equal(16);
-    });
-
-    it('should return 0 when "mult(4, 0)"', () => {
-      expect(mult(4, 0)).to.be.equal(0);
-    });
-
-  });
-
-  describe('Div', () => {
-
-    it('should return 2 when "div(4, 2)"', () => {
-      expect(div(4, 2)).to.be.equal(2);
-    });
-
-    it('should return "Não é possível dividir por zero" when "div(4,0)"', () => {
-      expect(div(4,0)).to.be.equal('Não é possível dividir por zero');
+    it('should return "7" when "FizzBuzz(7)"', () => {
+      expect(FizzBuzz(7)).to.be.equal(7);
     });
 
   });
